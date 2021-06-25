@@ -1,1 +1,906 @@
-${{ secrets.CSS_FILE }}
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: #fff;
+  }
+  
+  /* navigation start */
+  .navbar {
+    border-bottom: 2px solid #000;
+  }
+  .navbar-nav li {
+    margin: 5px 10px;
+  }
+  .bg-custom {
+    background: transparent;
+  }
+  .navbar-nav li a {
+    padding: 3px 20px !important;
+    background: transparent;
+    color: gray !important;
+    border: 2px solid #000;
+    font-family: "Lobster", cursive;
+    font-size: 18px;
+  }
+  .active,
+  .navbar-nav li a:hover {
+    background: #000 !important;
+    color: #fff !important;
+    transition: all 0.5s linear;
+  }
+  .navbar-toggler-icon {
+    width: 1em !important;
+    height: 1em !important;
+    padding: 5px !important;
+  }
+  .navbar-toggler {
+    width: auto !important;
+    height: auto !important;
+    outline: none !important;
+  }
+  .navbar-brand {
+    font-family: "righteous", cursive;
+    font-size: 35px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* slider start */
+  .carousel-item img {
+    width: 100%;
+  }
+  .drk:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.6;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 40%;
+  }
+  .carousel-caption p {
+    font-family: "Righteous", cursive;
+    font-size: 18px;
+  }
+  .carousel-caption h1 {
+    font-family: "Lobster", cursive;
+    font-size: 50px;
+  }
+  /* about container start */
+  .about-container {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  .about-box1 {
+    width: 70%;
+    padding: 50px;
+    background: #162c3b;
+  }
+  .about-box2 {
+    width: 30%;
+    height: auto;
+    background-image: url(img/about\ car1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .about-box1 h1 {
+    font-family: "Righteous", cursive;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+  }
+  .about-box1 p {
+    font-family: "Lobster", cursive;
+    color: #fff;
+    text-align: justify;
+  }
+  /* services area */
+  .services {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #055712;
+    padding-bottom: 20px;
+  }
+  .services .header {
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+  }
+  .services .header h1 {
+    font-family: "Righteous", cursive;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+  }
+  .services .header p {
+    font-family: "Lobster", cursive;
+    color: #fff;
+    text-align: center;
+  }
+  .services .content {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .content .box-1,
+  .content .box-2,
+  .content .box-3 {
+    background: #fff;
+    width: 30%;
+    padding: 30px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2), -5px -5px 30px rgba(0, 0, 0, 0.2);
+    border: 5px solid #162c3b;
+  }
+  .content .box-1 i,
+  .content .box-3 i,
+  .content .box-2 i {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    color: #000;
+    padding-bottom: 20px;
+    color: #162c3b;
+  }
+  .content .box-1 h2,
+  .content .box-2 h2,
+  .content .box-3 h2 {
+    font-family: "Righteous", cursive;
+    color: #162c3b;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  /* companies area */
+  .companies {
+    width: 100%;
+    background: #551506;
+    padding: 20px;
+    display: block;
+  }
+  .companies .intro {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .companies .intro h1 {
+    font-family: "Righteous", cursive;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+  }
+  .companies .intro p {
+    font-family: "Lobster", cursive;
+    color: #fff;
+    text-align: center;
+  }
+  .companies .brand {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .companies .brand img {
+    width: 150px;
+    margin: 0 30px;
+  }
+  
+  /* branches start */
+  .branches {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background: #012e35;
+  }
+  .branches .header {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .branches .header h1 {
+    font-family: "Righteous", cursive;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fff;
+    text-shadow: 2px 2px 5px #000;
+  }
+  .branches .ct-branch {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .ct-branch .box {
+    width: 20%;
+  }
+  .ct-branch .box img {
+    width: 100%;
+    border: 3px solid #fff;
+    margin: 5px 0;
+  }
+  .ct-branch .box h2 {
+    font-family: "Righteous", cursive;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+  }
+  
+  /* new cars start */
+  .new-cars {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    background: darkgoldenrod;
+  }
+  .new-cars .head {
+    display: block;
+    padding: 0 30px;
+  }
+  .new-cars .head h1 {
+    font-family: "Righteous", cursive;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+  }
+  .new-cars .content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+  }
+  .new-cars .content .image {
+    width: 20%;
+  }
+  .new-cars .content .image img {
+    width: 100%;
+    border: 3px solid #000;
+    margin: 5px;
+  }
+  .new-cars .content .image h2 {
+    font-family: "Righteous", cursive;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+  }
+  
+  /* footer start */
+  .footer {
+    width: 100%;
+    padding: 20px 100px;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .c-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer .c-right h1 {
+    font-family: "Righteous", cursive;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .footer .links {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer .links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Righteous", cursive;
+    margin: 0 10px;
+  }
+  .footer .links a:hover {
+    color: goldenrod;
+    text-decoration: underline;
+  }
+  .spanAll a {
+    color: green !important;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Righteous", cursive;
+  }
+  .spanAll a:hover {
+    color: goldenrod !important;
+    text-decoration: underline;
+  }
+  
+  /* about page banner area */
+  .about-banner {
+    width: 100%;
+    background-image: url(img/aboutbg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-banner h1 {
+    font-family: "Lobster", cursive;
+    color: #000;
+    text-align: center;
+    word-spacing: 40px;
+    letter-spacing: 20px;
+    font-size: 100px;
+    text-shadow: 3px 5px 2px lightgray;
+    opacity: 0.7;
+  }
+  .about-content {
+    width: 100%;
+    padding: 20px 100px;
+    background: #f7f8fa;
+    text-align: justify;
+  }
+  .about-content p {
+    font-family: "Lobster", cursive;
+    font-size: 20px;
+  }
+  .about-images {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 30px 50px 30px;
+  }
+  .about-images img {
+    width: 22%;
+    border: 3px solid #000;
+  }
+  
+  /* pricing page */
+  .pricing-page {
+    background: #f7f8fa;
+  }
+  .hyphen {
+    color: red;
+  }
+  .combine-pricing {
+    width: 100%;
+    padding: 20px;
+    display: block;
+  }
+  .combine-pricing .pricing-all-header {
+    width: 100%;
+    display: block;
+  }
+  .combine-pricing .pricing-all-header h1 {
+    text-align: center;
+    font-family: "Lobster", cursive;
+    color: #000;
+    border-bottom: 3px solid #000;
+    text-shadow: 2px 2px 5px #fff;
+    padding-bottom: 10px;
+    font-size: 50px;
+  }
+  .combine-pricing .pricing-all-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  .combine-pricing .pricing-all-content .img {
+    width: 22%;
+  }
+  .combine-pricing .pricing-all-content .img img {
+    width: 100%;
+    border: 3px solid #000;
+  }
+  .combine-pricing .pricing-all-content .img h1 {
+    font-family: "Righteous", cursive;
+    text-shadow: 2px 2px 5px #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 3px solid #000;
+  }
+  
+  /* contact page */
+  .contact-page {
+    background: linear-gradient(rgba(0, 0, 20, 0.5), rgba(0, 0, 20, 0.5)),
+      url(img/contact-page-bg.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  .contact-page .form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 30px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form .field {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+  }
+  .form .field label {
+    margin: 20px 0 0 0;
+    font-family: "Righteous", cursive;
+    color: #fff;
+    font-size: 20px;
+  }
+  .form .field input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 5px;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: transparent;
+    border-right: transparent;
+  }
+  .field4 textarea {
+    width: 100%;
+    height: 200px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    resize: none;
+    outline: none;
+    padding: 10px 0;
+    color: #fff;
+  }
+  .form .button {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+  }
+  .form .button input {
+    margin: 0 20px;
+    width: 100%;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-family: "Righteous", sans-serif;
+    font-size: 20px;
+    padding: 0 50px;
+  }
+  .contact-form .button input:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+  }
+  .contact-page .follow-us {
+    width: 100%;
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .follow-us .follow-head {
+    border-top: 3px solid #fff;
+    width: 70%;
+    padding-top: 5px;
+  }
+  .follow-us .follow-head h1 {
+    font-family: "Righteous", sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+  }
+  .follow-us .follow-icon {
+    padding: 20px 0;
+    width: 70%;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .follow-us .follow-icon i {
+    font-size: 80px;
+    color: #fff;
+    margin: 0 50px;
+    text-shadow: 2px 2px 5px #000;
+    cursor: pointer;
+  }
+  .follow-icon .fa-facebook:hover {
+    color: #3c5a99;
+  }
+  .follow-icon .fa-instagram:hover {
+    color: orange;
+  }
+  .follow-icon .fa-twitter:hover {
+    color: #00acee;
+  }
+  
+  /* popular cars page */
+  .popular-cars {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f8fa;
+  }
+  .popular-cars .popularcars-sec {
+    width: 90%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0;
+    border: 3px solid #000;
+  }
+  .popularcars-sec .image {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .popularcars-sec .image img {
+    width: 100%;
+    border: 2px solid #000;
+  }
+  .popularcars-sec .image h1 {
+    font-family: "Righteous", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 2px solid #000;
+    padding: 5px 0;
+  }
+  .popularcars-sec .content {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-content: center;
+  }
+  .popular-cars .content h3 {
+    margin-left: -20px;
+    font-family: "Righteous", sans-serif;
+  }
+  .popular-cars .content p,
+  .popular-cars .content ul li {
+    font-family: "Lobster", sans-serif;
+  }
+  @media (max-width: 970px) {
+    /* slider area */
+    .carousel-caption {
+      top: 35%;
+    }
+    .carousel-caption h1 {
+      font-size: 40px;
+    }
+    .carousel-caption p {
+      font-family: 16px;
+    }
+    /* about arae */
+    .about-container {
+      flex-direction: column;
+    }
+    .about-box1 {
+      width: 100%;
+    }
+    .about-box2 {
+      width: 100%;
+      height: 300px;
+    }
+    /* services area */
+    .services .header p {
+      text-align: justify;
+    }
+    .services .content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .content .box-1,
+    .content .box-2,
+    .content .box-3 {
+      width: 100%;
+      margin: 5px 0;
+      display: flex;
+      padding: 10px 0;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .content .box-1 i,
+    .content .box-3 i,
+    .content .box-2 i {
+      padding: 0;
+      font-size: 70px;
+    }
+    .content .box-1 i {
+      margin-left: -20px;
+    }
+    .content .box-1 h2,
+    .content .box-2 h2,
+    .content .box-3 h2 {
+      padding: 0;
+      font-size: 40px;
+    }
+    .companies {
+      width: 100%;
+      padding: 20px;
+      display: block;
+    }
+    .companies .intro {
+      padding: 0 10px;
+    }
+    .companies .intro p {
+      text-align: justify;
+    }
+    .companies .brand {
+      width: 100%;
+      padding: 10px 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .companies .brand img {
+      width: 150px;
+    }
+    .branches .ct-branch {
+      flex-wrap: wrap;
+    }
+    .ct-branch .box {
+      width: 40%;
+    }
+    .branches {
+      padding: 10px 20px;
+    }
+    .new-cars {
+      padding: 10px 20px;
+    }
+    .new-cars .content {
+      flex-wrap: wrap;
+    }
+    .new-cars .content .image {
+      width: 40%;
+    }
+    .footer {
+      padding: 20px 50px;
+    }
+  
+    /* about page */
+    .about-banner {
+      height: 150px;
+    }
+    .about-banner h1 {
+      font-size: 80px;
+      letter-spacing: 15px;
+      word-spacing: 30px;
+    }
+    .about-content {
+      padding: 20px 50px;
+    }
+    .about-images {
+      justify-content: space-around;
+    }
+  
+    /* contact page */
+    .form .field {
+      width: 80%;
+    }
+  
+    /* popular cars page */
+    .popularcars-sec {
+      flex-direction: column !important;
+    }
+    .popularcars-sec .image {
+      width: 100%;
+    }
+    .popular-cars .content h3 {
+      margin-left: 0;
+    }
+    .popularcars-sec .content {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 820px) {
+    .companies .intro {
+      padding: 0 5px;
+    }
+    .companies .brand {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+    .companies .brand img {
+      width: 120px;
+      margin: 10px;
+    }
+    .branches {
+      padding: 10px 10px;
+    }
+    .footer {
+      flex-direction: column;
+    }
+    .footer .c-right {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .footer .links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    /* about page */
+    .about-banner {
+      height: 125px;
+    }
+    .about-banner h1 {
+      font-size: 60px;
+      letter-spacing: 10px;
+      word-spacing: 20px;
+    }
+    .about-content {
+      padding: 20px 35px;
+    }
+    .about-images {
+      padding: 0 20px 30px 20px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .about-images img {
+      width: 44%;
+      margin-bottom: 20px;
+      border: 3px solid #000;
+    }
+  
+    /* pricing page */
+    .pricing-all-header {
+      display: block !important;
+      width: 100%;
+    }
+    .pricing-all-header h1 {
+      font-size: 40px !important;
+    }
+    .pricing-all-content {
+      display: flex !important;
+      padding: 20px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .pricing-all-content .img {
+      width: 44% !important;
+    }
+  
+    /* contact page */
+    .form .field {
+      width: 90%;
+    }
+    .follow-us .follow-head {
+      width: 90%;
+    }
+    .follow-us .follow-icon {
+      width: 90%;
+      justify-content: space-evenly;
+    }
+    .follow-us .follow-icon i {
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    /* about area */
+    .about-box1 {
+      padding: 20px;
+    }
+    .about-box2 {
+      width: 110%;
+      height: 200px;
+    }
+    .content .box-1 i,
+    .content .box-3 i,
+    .content .box-2 i {
+      font-size: 50px;
+    }
+    .branches {
+      padding: 10px 5px;
+    }
+    .footer {
+      padding: 20px;
+    }
+    .footer .c-right h1 {
+      text-align: center;
+    }
+  
+    /* about page */
+    .about-banner {
+      height: 100px;
+    }
+    .about-banner h1 {
+      font-size: 40px;
+      letter-spacing: 8px;
+      word-spacing: 15px;
+    }
+    .about-content {
+      padding: 20px;
+    }
+    .about-images {
+      padding: 0 10px 30px 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .about-images img {
+      width: 90%;
+      margin-bottom: 20px;
+      border: 3px solid #000;
+    }
+  
+    /* pricing page */
+    .pricing-all-header {
+      display: block !important;
+      width: 100%;
+    }
+    .pricing-all-header h1 {
+      font-size: 35px !important;
+    }
+    .pricing-all-content {
+      display: flex !important;
+      padding: 20px 0 !important;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .pricing-all-content .img {
+      width: 95% !important;
+      margin: 10px 0 !important;
+    }
+  
+    /* conatact page  */
+    .form .button input {
+      margin: 0 10px;
+      font-size: 17px;
+      padding: 0 30px;
+    }
+    .field4 textarea {
+      height: 130px;
+    }
+    .follow-us .follow-icon {
+      justify-content: space-around;
+    }
+    .follow-us .follow-icon i {
+      font-size: 60px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .drk:after {
+      background: transparent;
+    }
+  }
+  
